@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+  <style>
+    /* Cambia el color de las viñetas de una lista específica */
+    ul.red-bullets li::marker {
+      color: red;
+    }
+
+    ul.blue-bullets li::marker {
+      color: #007bff;
+    }
+   
+  </style>
+</head>
+<body>
+
+  <h2>Listas con viñetas de colores</h2>
+
+  <ul class="red-bullets">
+    <li>Coffee</li>
+    <li>Tea</li>
+    <li>Coca Cola</li>
+  </ul>
+
+  <ul class="blue-bullets">
+    <li>Coffee</li>
+    <li>Tea</li>
+    <li>Coca Cola</li>
+  </ul>
+  <footer>Josue Joshua Pichardo Hernandez - 189738</footer>
+
+</body>
+</html>
+<!--METODO 2
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    ul.custom-bullets {
+      list-style-type: none; /* Oculta la viñeta original */
+      padding-left: 20px;
+    }
+
+    ul.custom-bullets li::before {
+      content: "•"; /* Símbolo de la viñeta */
+      color: red; /* Color de la viñeta */
+      font-weight: bold;
+      display: inline-block;
+      width: 1em;
+      margin-left: -1em;
+    }
+  </style>
+</head>
+<body>
+
+  <ul class="custom-bullets">
+    <li>Coffee</li>
+    <li>Tea</li>
+    <li>Coca Cola</li>
+  </ul>
+
+</body>
+</html>-->
+
+<!--METODO 3
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    li.red-item {
+      color: red; /* Hereda el color a la viñeta */
+    }
+
+    li.red-item span {
+      color: black; /* Restaura el color del texto */
+    }
+  </style>
+</head>
+<body>
+
+  <ul>
+    <li class="red-item"><span>Coffee</span></li>
+    <li class="red-item"><span>Tea</span></li>
+    <li class="red-item"><span>Coca Cola</span></li>
+  </ul>
+
+</body>
+</html>-->
